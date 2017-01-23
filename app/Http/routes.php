@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/game', function () {
+    return view('game.index');
+});
 
 // 認証ルート…
 Route::get('auth/login', 'Auth\AuthController@getLogin');
